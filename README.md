@@ -18,6 +18,7 @@ Merge data frames into one data frame
 Change column names and create new "occur" column
 
   `datafr$occur <- 1`
+  
  ` colnames(datafr)[c(1,2,3,4,5,6,7)]<-c("chr", "start", "stop", "count", "type", "sample", "occur")`
 
 Make sure datafr now has seven appropriately-named columns
