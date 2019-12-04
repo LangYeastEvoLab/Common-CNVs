@@ -1,5 +1,6 @@
 # Common-CNVs
 Find recurrent copy number variants from Control-FREEC output
+
 You should have a .txt file for each sample containing CNV information
 
 Import all text files and create column with file name
