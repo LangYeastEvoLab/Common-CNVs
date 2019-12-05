@@ -2,11 +2,15 @@
 Find recurrent copy number variants from Control-FREEC output
 
 ## Getting Started
+
+After running Control-FREEC on your samples, download the CNV files to your computer
+>these should be small text files containing information of called CNVs
+
 You should have a .txt file for each sample containing CNV information
 
 Place all these files in your working directory
 
-### Importing Control-FREEC CNV files
+## Importing Control-FREEC CNV files
 
 Import all text files and create column with file name:
 
@@ -29,8 +33,13 @@ Change column names and create new "occur" column:
 
 Make sure **datafr** now has seven appropriately-named columns
 
+## Running commonCNV.R
+
 Now run commonCNV.R script, the default window size is 250
 
-If you want to remove background CNVs, include that data frame as an input after it is created using the above method
+`df.output <- commonCNV(datafr, [window], [background.datafr])`
 
-  `df.output <- commonCNV(datafr, [window], [background.datafr])`
+If you want to remove background CNVs (eg from a control group), include that data frame as the *background.datafr* input
+*Note: background.datafr should be formatted using the same procedure listed above in "Importing Control-FREEC CNV files"*
+
+  
