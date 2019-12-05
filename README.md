@@ -28,6 +28,6 @@ Make sure *datafr* now has seven appropriately-named columns
 
 Now run **commonCNV.R** script, the default window size is 250
 
-If you want to remove background CNVs, include that data frame as an input after it is created using **commonCNV.R**
+If you want to remove background CNVs, include that data frame as an input after it is created using the above method
 
   `df.output <- commonCNV(datafr, [window], [background.datafr])`
