@@ -3,7 +3,9 @@ Find recurrent copy number variants from Control-FREEC output
 
 You should have a .txt file for each sample containing CNV information
 
-Import all text files and create column with file name
+Place all these files in your working directory
+
+Import all text files and create column with file name:
 
   ```
   file_list <- list.files(pattern=".*.txt")
@@ -12,11 +14,11 @@ Import all text files and create column with file name
   data_rbind <- do.call("rbind", data) 
   colnames(data_rbind)[c(1,2,3,4,5,6)]<-c("sample", "chr", "start","stop", "count", "type")
 ```
-Merge data frames into one data frame
+Merge data frames into one data frame:
 
   `datafr <- do.call("rbind", data)`
 
-Change column names and create new "occur" column
+Change column names and create new "occur" column:
 
   `datafr$occur <- 1`
   
