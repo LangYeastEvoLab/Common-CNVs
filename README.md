@@ -40,6 +40,7 @@ Now run commonCNV.R script, the default window size is 250
 `df.output <- commonCNV(datafr, [window], [background.datafr])`
 
 If you want to remove background CNVs (eg from a control group), include that data frame as the *background.datafr* input
+
 *Note: background.datafr should be formatted using the same procedure listed above in "Importing Control-FREEC CNV files"*
 
   
