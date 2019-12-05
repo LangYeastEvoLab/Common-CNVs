@@ -2,7 +2,7 @@ commonCNV <- function(input,window=250,background){
   
   #script by RCV 12/3/19
   #counts reccurent CNVs from control-freec output data
-  #follow GitHub instructions to prepare our input file: 
+  #follow GitHub instructions to prepare your input file: https://github.com/LangYeastEvoLab/Common-CNVs/blob/master/README.md
   
   #store input and make new df
   df1 <- input
